@@ -55,7 +55,7 @@ Not working?  Try `npm i` locally first. ¯\_(ツ)_/¯
 Relies on local ~/.aws/ credentials, see the README in the infrastructure repo for the list of required profiles.
 
 ```shell
-export AWS_ENV="dev" && export AWS_PROFILE="bsa$AWS_ENV"
+export AWS_ENV="dev" && export AWS_PROFILE="aug$AWS_ENV"
 docker run -it \
     -v $(pwd):/opt/node_app/app \
     -v ~/.aws/:/root/.aws/ \
@@ -68,7 +68,7 @@ docker run -it \
 Relies on local ~/.aws/ credentials, see the README in the infrastructure repo for the list of required profiles.
 
 ```shell
-export AWS_ENV="dev" && export AWS_PROFILE="bsa$AWS_ENV"
+export AWS_ENV="dev" && export AWS_PROFILE="aug$AWS_ENV"
 export EVENTPATH="events/validRecurringNotification.json"
 docker run -it -p 80:8080 \
     -v $(pwd):/opt/node_app/app \
@@ -81,7 +81,7 @@ docker run -it -p 80:8080 \
 ## Test
 
 ```shell
-export AWS_ENV="dev" && export AWS_PROFILE="bsa$AWS_ENV"
+export AWS_ENV="dev" && export AWS_PROFILE="aug$AWS_ENV"
 # see local setup section above to create env-secrets.env file
 docker run -it \
     -v $(pwd):/opt/node_app/app \

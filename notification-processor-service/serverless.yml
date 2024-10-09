@@ -51,7 +51,7 @@ plugins:
   - serverless-plugin-diff
 
 custom:
-  prefix: bsa
+  prefix: aug
   # serverless-prune-plugin
   prune:
     automatic: true
